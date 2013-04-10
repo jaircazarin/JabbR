@@ -882,7 +882,7 @@
       <DependentUpon>201303220549121_ContentProviderContent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201303302002539_Attachments.resx">
-        <DependentUpon>201303302002539_Attachments.cs</DependentUpon>
+      <DependentUpon>201303302002539_Attachments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201303302058326_AttachmentMetadata.resx">
       <DependentUpon>201303302058326_AttachmentMetadata.cs</DependentUpon>
@@ -954,6 +954,7 @@
   <ItemGroup>
     <Compile Include="App_Start\Startup.DependencyInjection.cs" />
     <Compile Include="ContentProviders\Core\ContentProviderProcessor.cs" />
+    <Compile Include="ContentProviders\MicrosoftOfficeDocsContentProvider.cs" />
     <Compile Include="ContentProviders\GitHubIssueCommentsContentProvider.cs" />
     <Compile Include="Infrastructure\AuthenticationServiceExtensions.cs" />
     <Compile Include="Infrastructure\CryptoHelper.cs" />
@@ -966,7 +967,7 @@
     </Compile>
     <Compile Include="Migrations\201303302002539_Attachments.cs" />
     <Compile Include="Migrations\201303302002539_Attachments.Designer.cs">
-        <DependentUpon>201303302002539_Attachments.cs</DependentUpon>
+      <DependentUpon>201303302002539_Attachments.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201303302058326_AttachmentMetadata.cs" />
     <Compile Include="Migrations\201303302058326_AttachmentMetadata.Designer.cs">
