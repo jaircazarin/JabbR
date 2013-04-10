@@ -11,7 +11,7 @@ namespace JabbR.ContentProviders
         private const string EmbedCode =
             @"<iframe src=""https://view.officeapps.live.com/op/embed.aspx?src={0}"" width=""100%;"" height=""400px"" frameborder=""0"">";
 
-        private readonly List<string> _supportedExtensions = new List<string>
+        private static readonly List<string> SupportedExtensions = new List<string>
             {
                 "xlsx",
                 "xls",
@@ -37,7 +37,7 @@ namespace JabbR.ContentProviders
 
         public override bool IsValidContent(Uri uri)
         {
-            return base.IsValidContent(uri) && _supportedExtensions.Any(str => uri.AbsolutePath.EndsWith(str));
+            return base.IsValidContent(uri) && SupportedExtensions.Any(str => uri.AbsolutePath.EndsWith(str));
         }
 
         protected override IList<string> ExtractParameters(Uri responseUri)
